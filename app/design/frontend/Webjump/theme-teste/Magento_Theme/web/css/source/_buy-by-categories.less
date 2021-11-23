@@ -1,0 +1,68 @@
+& when (@media-common = true) {
+   .row-buy-by-categories {
+       margin-top: -50px;
+   }
+
+    .text-primary {
+        /* Style for "COMPRE POR" */
+        height: 51px;
+        color: #14214e;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 48px !important;
+        text-transform: uppercase;
+         p {
+            /* Text style for "COMPRE POR" */
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+         }
+    }
+
+    .buy-by-categories-column {
+        width: auto !important;
+    }
+
+    .text-buy-by-categories {
+        width: auto;
+        height: 37px;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 700;
+        font-style: normal !important;
+        letter-spacing: normal !important;
+        line-height: 48px !important;
+        text-align: center;
+        text-transform: uppercase;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        border-style: none;
+        border-width: 1px;
+        border-radius: 0px;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        top: -140px;
+        bottom: 0px;
+        /* left: 145px; */
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+  
+}
+
+//
+//  Mobile
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    
+}

@@ -1,0 +1,32 @@
+<?php
+/**
+ * PHP version 7
+ *
+ * @author      Webjump Core Team <dev@webjump.com.br>
+ * @copyright   2021 Webjump (http://www.webjump.com.br)
+ * @license     http://www.webjump.com.br  Copyright
+ * @link        http://www.webjump.com.br
+ *
+ */
+
+$hasBlock = $block->getLayout()->createBlock("Magento\Cms\Block\Block")->setBlockId("buy-by-categories")->toHtml();
+?>
+<?php if($hasBlock): ?>
+  <div class="row-buy-by-categories" data-bind="scope: 'buy-categories'">
+    <?= $this->getLayout()->createBlock("Magento\Cms\Block\Block")->setBlockId("buy-by-categories")->toHtml(); ?>"
+  </div>
+  <script type="text/x-magento-init">
+    {
+      "*": {
+        "Magento_Ui/js/core/app": {
+          "components": {
+            "slider-all-you-need": {
+              "component": "Magento_Theme/js/slider",
+              "sliderComponent": <?= /* @escapeNotVerified */ $block->getJsLayout() ?>
+            }
+          }
+        }
+      }
+    }
+  </script>
+<?php endif; ?>

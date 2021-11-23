@@ -1,0 +1,36 @@
+& when (@media-common = true) {
+    .pagebuilder-slider.slider-home{
+        max-width: 2560px;
+        margin-left: -20px !important;
+        margin-right: -20px !important;
+
+        h3 {
+            background: blueviolet;
+        }
+    }
+    .pagebuilder-slide-wrapper {
+        max-width: 2560px !important;
+        margin-left: -20px !important;
+        margin-right: -20px !important;
+    }
+    .cms-index-index .page-main {
+        padding-left: 0px ;
+        padding-right: 0px ;
+    }
+
+    
+}
+
+//
+//  Desktop
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+  
+}
+
+//
+//  Mobile
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    
+}
